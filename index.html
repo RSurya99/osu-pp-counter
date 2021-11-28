@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>yep 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="deps/style.css">
+  <link rel="stylesheet" href="deps/odometr.css">
+</head>
+
+<body>  
+
+  
+  <div class="card">
+    <div class="background w100xh">
+      <img id="bg" class="w100xh" alt="">
+    </div>
+    <header>
+      <time id="datetime"></time>
+      <div class="logo">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 234.5 53.7"><style>.st0{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}</style><path d="M.6 1.4L116.9 52l117-50.6" class="st0"/></svg>
+        </span></div>
+      <div class="details">Details</div>
+    </header>
+    <div class="announcement">
+      <div class="body-announcement">
+        <h3><span id="name"></span></h3>
+        <h3><span id="title"></span></h3>
+        <h3><span id="diff"></span></h3>
+
+        <div id="state">
+          <div class="text">
+            <div class="odometer" id="pp"></div>
+            <div>
+              pp
+            </div>
+          </div>
+          <div class="text">
+              <div id="h100" class="odometer"></div>
+              <div>
+                  x100
+              </div>
+          </div>
+          <div class="text">
+              <div id="h50" class="odometer"></div>
+              <div>
+                  x50
+              </div>
+          </div>
+          <div class="text">
+              <div id="h0" class="odometer"></div>
+              <div>
+                  xMiss
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="deps/reconnecting-websocket.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="deps/countUp.js"></script>
+  <script src="index.js"></script>
+  <script>
+    let dateNow = moment().format("DD - MM - YYYY");
+    document.getElementById('datetime').innerHTML = dateNow;
+  </script>
+</body>
+
+</html>
