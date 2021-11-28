@@ -189,6 +189,10 @@ h3 {
     justify-content: center;
 }
 
+.text span.text-cross{
+  font-size: 18px !important;
+}
+
 #h100{
     color: lightgreen;
 }
