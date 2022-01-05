@@ -1,5 +1,7 @@
 # Osu! PP Counter
 
+![Example Osu! PP Counter Interface](/assets/images/overlay.png)
+
 Is a PP counter design for game osu!.
 
 ## How to use
